@@ -1,4 +1,5 @@
 import Header from "../../components/header/header/Header";
+import Legacy from "../../components/legacy/Legacy";
 import Section1 from "../../components/section1/Section1";
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     <>
       <Header />
       <Section1 />
+      <Legacy/>
     </>
   )
 }

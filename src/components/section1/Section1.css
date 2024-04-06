@@ -1,5 +1,5 @@
 .section1-wrapper{
-  background-image: url("../../img/cover.png");
+  background-image: url("public/img/cover.png");
   width: 100%;
   height: 718px;
   display: flex;
@@ -29,12 +29,28 @@
   font-size:25px ;
   font-weight: 600;
   color: #2DAAE1;
+  animation: arrow 1s linear 0 infinite;
 
 }
 
+
 .Section1-svg-arrow{
-  width: 44px;
-  height: 44px;
   color: #000;
-  cursor: pointer;
+  z-index: 1;
+  animation-name: arrow;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 10;
+  animation-delay: 3s;
+}
+
+@keyframes arrow {
+  0%{
+    scale: 100%;
+    
+  }
+  50%{
+    scale: 90%;
+    color: #2DAAE1;
+  }
 }
