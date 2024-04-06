@@ -1,0 +1,27 @@
+.gallery-card-wrapper{
+  min-height: 488px;
+  min-width: 269px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.gallery-card-wrapper img{
+  height: 100%;
+  width: 100%;
+}
+
+.gallery-card-info{
+}
+
+.gallery-card-info h2{
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  color: #000000;
+}
+
+.gallery-card-info p{
+  font-size: 10px;
+  font-weight: 500;
+  color: #686868;
+}

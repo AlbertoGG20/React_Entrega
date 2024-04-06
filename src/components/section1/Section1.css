@@ -1,12 +1,15 @@
 .section1-wrapper{
-  background-image: url("public/img/cover.png");
+  background-image: url("public/img/arco1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 718px;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  gap:260px ;
+  gap:50%;
   padding: 10px 30px;
   box-sizing: border-box;
 }
@@ -52,5 +55,12 @@
   50%{
     scale: 90%;
     color: #2DAAE1;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .section1-wrapper{
+    height: 100vh;
   }
 }

@@ -1,11 +1,12 @@
 .legacy-content-wrapper{
-    margin-top: 42px;
-    height: 760px;
+    max-width: 1500px;
+    margin: 42px auto;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 19px;
+    gap: 19px; 
 }
+
 .legacy-content-info{
     padding: 0 32px;
     display: flex;
@@ -32,20 +33,29 @@
     padding: 30px 0;
     width: 100%;
     height: 350px;
-    background-color: #686868;
     display: flex;
     align-items: end;
     justify-content: center;
+    background-image: url("public/img/legacy1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.legacy-content-img button{
+.legacy-btn-p{
     width: 100px;
     height: 36px;
     background-color: #2682C0;
+    color: white;
     border: none;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+}
+
+.btn-active{
+  margin-top: 32px;
+  display: none;
 }
 
 .legacy-content-text h2{
@@ -59,3 +69,32 @@
     font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+  .legacy-content-wrapper{
+      flex-direction: row;
+      gap: 0;
+  }
+
+  .legacy-content-info{
+    width: 33%;
+}
+  .legacy-content-text{
+      width: 100%;
+  }
+  .legacy-content-img{
+      width: 66%;
+  }
+
+   .btn-active{
+      display:inline;
+  }
+
+  .btn-dissable{
+      display: none;
+  }
+
+  .legacy-content-img{
+      height: 500px;
+  }
+
+}
