@@ -1,3 +1,4 @@
+import DatePicker from "../../components/datePicker/DatePicker";
 import Header from "../../components/header/header/Header";
 import Legacy from "../../components/legacy/Legacy";
 import Section1 from "../../components/section1/Section1";
@@ -10,6 +11,7 @@ function Home() {
       <Section1 />
       <Legacy />
       <Section2 />
+      <DatePicker />
     </>
   )
 

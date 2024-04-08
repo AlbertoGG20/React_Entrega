@@ -1,9 +1,15 @@
 :root {
+  --colorPrincipal: #2682C0;
+  --colorSecundario: #2DAAE1;
+  --colorTerciario: #686868;
+  --colorOscuro: #000;
+  --colorNeutro : #E2E2E2;
 
   font-family: "Montserrat",system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
 
   color-scheme: light dark;
   color: rgba(12, 12, 12, 0.87);
@@ -17,11 +23,24 @@
   box-sizing: border-box;
 }
 
-
-button:hover {
-  border-color: #646cff;
-}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn-p{
+  width: 100px;
+  height: 36px;
+  background-color: #2682C0;
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
 }

@@ -1,0 +1,77 @@
+input[type="date"] {
+  width: 200px;
+  height: 40px;
+  box-sizing: content-box;
+  border:none;
+  cursor: pointer;
+  overflow: hidden;
+}
+input[type="date"]:focus{
+  outline-color: var(--colorPrincipal);
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color:var(--colorSecundario);
+  padding: 14px;
+  cursor: pointer;
+}
+
+::-webkit-datetime-edit {
+  background-color: var(--colorNeutro);
+  padding:12px;
+  cursor: pointer;
+}
+
+.datePicker-wrapper{
+  padding: 0 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+
+.datePicker-text-wrapper{
+  display: flex;
+  gap: 12px;
+}
+
+.datePicker-label-name-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.datePicker-label-subname-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.datePicker-label{
+  font-size: 0.62rem;
+  font-weight: 600;
+}
+
+.datePicker-input{
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--colorNeutro);
+  padding: 7px 12px;
+  color: var(--colorTerciario);
+}
+
+.datePicker-input:focus{
+  outline-color: var(--colorPrincipal);
+}
+
+.datePicker-date-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+
+
+
+
