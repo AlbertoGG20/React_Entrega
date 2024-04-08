@@ -27,6 +27,7 @@ input[type="date"]:focus{
   display: flex;
   flex-direction: column;
   gap: 19px;
+  background-color: #F6F6F6;
 }
 
 
