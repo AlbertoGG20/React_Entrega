@@ -1,14 +1,16 @@
 import "./Section1.css";
 function Section1() {
   return (
-    <div className="section1-wrapper">
-      <div className="section1-content-wrapper">
-        <h1 className="section1-content-title">Ruta del Agua</h1>
-        <span className="section1-content-text">Telde</span>
+    < >
+      <div className="section1-wrapper">
+        <div className="section1-content-wrapper">
+          <h1 className="section1-content-title">Ruta del Agua</h1>
+          <span className="section1-content-text">Telde</span>
+        </div>
       </div>
       <svg className="Section1-svg-arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.378 22.8238C13.4975 22.7007 13.6393 22.6031 13.7956 22.5365C13.9518 22.4699 14.1193 22.4356 14.2885 22.4356C14.4577 22.4356 14.6252 22.4699 14.7814 22.5365C14.9376 22.6031 15.0795 22.7007 15.1989 22.8238L20.7141 28.4866L20.7141 12.3197C20.7141 11.9697 20.8495 11.634 21.0905 11.3865C21.3316 11.139 21.6585 11 21.9994 11C22.3403 11 22.6672 11.139 22.9083 11.3865C23.1493 11.634 23.2847 11.9697 23.2847 12.3197L23.2847 28.4866L28.802 22.8238C29.0435 22.5758 29.371 22.4366 29.7124 22.4366C30.0539 22.4366 30.3814 22.5758 30.6229 22.8238C30.8643 23.0717 31 23.408 31 23.7586C31 24.1092 30.8643 24.4455 30.6229 24.6934L22.9109 32.6118C22.7915 32.7349 22.6496 32.8325 22.4934 32.8991C22.3371 32.9657 22.1696 33 22.0005 33C21.8313 33 21.6638 32.9657 21.5076 32.8991C21.3513 32.8325 21.2094 32.7349 21.09 32.6118L13.378 24.6934C13.2582 24.5708 13.1631 24.4251 13.0983 24.2647C13.0334 24.1043 13 23.9323 13 23.7586C13 23.5849 13.0334 23.4129 13.0983 23.2525C13.1631 23.0921 13.2582 22.9464 13.378 22.8238Z" fill="currentColor" />
       </svg>
-    </div>
+    </>
   )
 } export default Section1;

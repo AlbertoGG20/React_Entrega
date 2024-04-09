@@ -23,11 +23,11 @@ input[type="date"]:focus{
 }
 
 .datePicker-wrapper{
-  padding: 0 34px;
+  padding: 4px 34px 8px;
   display: flex;
   flex-direction: column;
   gap: 19px;
-  background-color: #F6F6F6;
+  background-color: #efefef;
 }
 
 

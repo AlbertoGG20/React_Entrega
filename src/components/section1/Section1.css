@@ -4,14 +4,14 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 718px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  gap:40%;
   padding: 10px 30px;
   box-sizing: border-box;
+  mask-image: linear-gradient(rgb(0, 0, 0) 70%, transparent 100%);
 }
 
 .section1-content-wrapper{
@@ -45,6 +45,10 @@
   animation-timing-function: linear;
   animation-iteration-count: 10;
   animation-delay: 3s;
+  z-index: 10;
+  position: absolute;
+  bottom: 5%;  
+  left: 44%;
 }
 
 @keyframes arrow {
@@ -62,5 +66,10 @@
 @media screen and (min-width: 768px) {
   .section1-wrapper{
     height: 100vh;
+  }
+
+  .Section1-svg-arrow{
+    bottom: 10px;  
+    left: 50%;
   }
 }
