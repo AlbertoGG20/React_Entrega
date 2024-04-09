@@ -1,0 +1,18 @@
+footer{
+  background-color: var(--colorOscuro);
+  color: white;
+}
+
+.footer-wrapper{
+  padding: 12px 34px;
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-wrapper{
+  display: flex;
+  gap: 7px;
+  list-style: none;
+
+}

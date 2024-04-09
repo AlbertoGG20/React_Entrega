@@ -20,14 +20,14 @@
 }
 
 .maps-wrapper {
-  margin-top: 42px;
+
+  margin: 42px auto;
   display: flex;
   flex-direction: column;
   gap:19px;
   height: 400px;
-  width: 100%;
+  max-width: 1500px;
   padding: 4px 34px 8px;
-  background-color: aqua;
   margin-bottom: 300px;
 }
 
