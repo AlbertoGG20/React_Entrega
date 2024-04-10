@@ -15,17 +15,16 @@
 }
 
 .legacy-content-info p{
-    color: rgb(101, 101, 101);
+    color:var(--colorTerciario);
 }
 .legacy-content-info span{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
-    color: #2682C0;
+    color: var(--colorPrincipal);
 }
 
 .legacy-content-info hr{
-    color: #2682C0;
-    background-color: #2682C0;
+    border: 1px solid var(--colorNeutro);
 }
 
 .legacy-content-img{
@@ -53,7 +52,7 @@
 }
 
 .legacy-content-text p{
-    color: #686868;
+    color: var(--colorTerciario);
     font-size: 1rem;
     font-weight: 500;
 }

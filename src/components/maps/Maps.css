@@ -11,11 +11,11 @@
 }
 
 .leaflet-bar a{
-  color: var(--colorPrincipal);
+  color: var(--colorSecundario);
 }
 
 .leaflet-bar a span{
- font-size: 1rem;
+ font-size: 1.6rem;
  font-weight: 700;
 }
 

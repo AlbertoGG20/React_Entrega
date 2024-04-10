@@ -17,11 +17,11 @@
   font-size: 1rem;
   font-weight: 600;
   font-style: normal;
-  color: #000000;
+  color: var(--colorOscuro);
 }
 
 .gallery-card-info p{
   font-size: 0.62rem;
   font-weight: 500;
-  color: #686868;
+  color: var(--colorTerciario);
 }

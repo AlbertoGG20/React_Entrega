@@ -16,15 +16,15 @@
 
 .section2-content-text-wrapper h2{
   font-size:1.618rem;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
-  color: #000000;
+  color: var(--colorOscuro);
 }
 
-.section2-content-text-wrapper p{
+.section2-content-text-wrapper span{
   font-size: 1rem;
   font-weight: 500;
-  color: #686868;
+  color: var(--colorTerciario);
 }
 
 
@@ -38,13 +38,14 @@
 
 .section2-content-gallery-wrapper::-webkit-scrollbar {
   display: none;
+
 }
 
 .section2-content-link{
   font-style:italic;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 0.62rem;
   text-decoration: none;
-  color: #2DAAE1;
+  color: var(--colorPrincipal);
   padding: 0 34px;
 }
