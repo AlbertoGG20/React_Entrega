@@ -2,7 +2,7 @@
   background-image: url("public/img/section1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: end center; 
+  background-position: center; 
   width: 100%;
   height: 100vh;
   display: flex;
@@ -45,7 +45,7 @@
   animation-timing-function: linear;
   animation-iteration-count: 10;
   animation-delay: 3s;
-  z-index: 10;
+  z-index: 2;
   position: absolute;
   bottom: 10%;  
   left: 44%;

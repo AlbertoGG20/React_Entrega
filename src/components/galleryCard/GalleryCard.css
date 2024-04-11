@@ -1,6 +1,6 @@
 .gallery-card-wrapper{
   min-height: 488px;
-  min-width: 269px;
+  min-width: 240px;
   display: flex;
   flex-direction: column;
   gap: 12px;
