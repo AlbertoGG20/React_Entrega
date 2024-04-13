@@ -12,7 +12,7 @@ function Section2() {
       </div>
       <div className="section2-content-gallery-wrapper">
         {photos.map((photos, index) => (
-          <GalleryCard key={index} fileName={`img/${photos.fileName}`} altText={`${photos.altText}`} title={`${photos.title}`} description={`${photos.description}`} />
+          <GalleryCard key={index} fileName={`/img/${photos.fileName}`} altText={`${photos.altText}`} title={`${photos.title}`} description={`${photos.description}`} />
         ))}
       </div>
       <a href="#" className="section2-content-link">Ver más fotos</a>

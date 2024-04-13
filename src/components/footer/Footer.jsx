@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       <div className="footer-wrapper">
         <div className="footer-section1-wrapper">
-          <img className="logo-footer" src="public/img/logos.png" alt="" />
+          <img className="logo-footer" src="/img/logos.png" alt="" />
           <div className="footer-social-wrapper">
             <a href="">
               <svg className="social-icon" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">

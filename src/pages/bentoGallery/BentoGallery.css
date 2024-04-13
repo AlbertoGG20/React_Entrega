@@ -1,0 +1,32 @@
+.bento-main{
+  padding-top: 100px;
+}
+
+.bento-main h1{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.bento-wrapper{
+  margin-top: 32px;
+  width: 100%;
+  display:grid;
+  gap: 7px;
+  column-fill: auto;
+}
+
+@media screen and (min-width: 768px){
+  .bento1{
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+  }
+  
+  .bento4{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+  }
+  
+}
+

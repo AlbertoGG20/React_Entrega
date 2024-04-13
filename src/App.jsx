@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/home/Home';
-import Gallery from './pages/galery/Gallery'
+import Gallery from './pages/bentoGallery/BentoGallery'
 function App() {
 
 

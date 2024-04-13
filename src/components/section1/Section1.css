@@ -1,5 +1,5 @@
 .section1-wrapper{
-  background-image: url("public/img/section1.jpg");
+  background-image: url("/img/section1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 

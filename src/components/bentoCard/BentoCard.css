@@ -1,0 +1,16 @@
+.bento-gallery-wrapper{
+  background-color: var(--colorSecundario);
+  
+}
+
+.bento-gallery-img{
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bento-gallery-info{}
+

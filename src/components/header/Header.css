@@ -11,7 +11,7 @@
   background-color: white;
   transition: opacity 0.2s ease-in-out;
   z-index: 10;
-  opacity: 0;
+  opacity: 1;
 }
 .header-content-wrapper{
   margin: 0 auto;
@@ -42,7 +42,7 @@
 }
 
 .show-back{
-  opacity: 1;
+  opacity: 0;
 }
 
 /* --------------------- nav ------------------ */

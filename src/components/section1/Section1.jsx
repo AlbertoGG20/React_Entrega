@@ -1,4 +1,3 @@
-import Legacy from "../legacy/Legacy";
 import "./Section1.css";
 
 function Section1() {
