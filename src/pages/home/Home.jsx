@@ -9,7 +9,7 @@ import Section2 from "../../components/section2/Section2";
 function Home() {
   return (
     <>
-      <Header />
+      <Header page={'home'} />
       <Section1 />
       <Legacy />
       <Section2 />
