@@ -11,7 +11,7 @@ function Section2() {
         <span>Algunas fotos de esta maravillosa aventura</span>
       </div>
       <div className="section2-content-gallery-wrapper">
-        {photos.map((photos, index) => (
+        {photos.slice(0, 5).map((photos, index) => (
           <GalleryCard key={index} fileName={`/img/${photos.fileName}`} altText={`${photos.altText}`} title={`${photos.title}`} description={`${photos.description}`} />
         ))}
       </div>

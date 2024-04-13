@@ -11,20 +11,75 @@
   margin-top: 32px;
   width: 100%;
   display:grid;
-  gap: 7px;
-  column-fill: auto;
+  gap: 12px;
+/*   column-fill: auto; */
 }
 
 @media screen and (min-width: 768px){
-  .bento1{
-    grid-column-start: 2;
-    grid-column-end: span 3;
+  .bento0{
+    grid-column-start: 3;
+    grid-column-end:  5;
     grid-row-start: 1;
   }
   
+  .bento2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+
+  .bento3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+  }
+
   .bento4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+  }
+
+  .bento5{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+  }
+
+  .bento6{
     grid-column-start: 1;
     grid-column-end: span 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .bento7{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+  }
+
+  .bento8{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+
+  .bento9{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+  }
+
+  .bento10{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+  }
+
+  .bento11{
+    grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 2;
   }
   
