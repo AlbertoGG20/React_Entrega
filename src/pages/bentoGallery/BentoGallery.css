@@ -1,5 +1,11 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
 .bento-main{
   padding-top: 100px;
+
 }
 
 .bento-main h1{
@@ -8,10 +14,11 @@
 }
 
 .bento-wrapper{
-  margin-top: 32px;
   width: 100%;
   display:grid;
   gap: 12px;
+  padding: 25px 32px;
+  background-color: rgb(46, 46, 46);
 /*   column-fill: auto; */
 }
 
@@ -48,7 +55,7 @@
 
   .bento6{
     grid-column-start: 1;
-    grid-column-end: span 2;
+    grid-column-end:  3;
     grid-row-start: 4;
     grid-row-end: 5;
   }

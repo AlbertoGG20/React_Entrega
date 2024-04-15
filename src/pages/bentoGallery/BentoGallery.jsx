@@ -5,6 +5,7 @@ import photos from "../../services/photos/photo";
 import './BentoGallery.css';
 
 
+
 function BentoGallery() {
   return (
     <>
@@ -17,6 +18,7 @@ function BentoGallery() {
           ))}
         </div>
       </main>
+      <Footer />
     </>
   )
 
