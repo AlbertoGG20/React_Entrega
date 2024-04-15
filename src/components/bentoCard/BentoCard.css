@@ -1,5 +1,4 @@
 .bento-gallery-wrapper{
-  background-color: var(--colorSecundario);
   width: 100%;
   max-height: 1400px;
   min-height: 600px;
@@ -17,5 +16,18 @@
 }
 
 
-.bento-gallery-info{}
+.bento-gallery-info{
+  background-color:white;
+  padding: 7px 7px;
+}
 
+.bento-gallery-info h2{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.bento-gallery-info p{
+  font-size: 0.62rem;
+  font-weight: 500;
+  color: var(--colorNeutral);
+}
