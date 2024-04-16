@@ -6,9 +6,9 @@
 .header-wrapper{
   position: fixed;
   width: 100%;
-  height: 58px;
+  height: 68px;
   padding: 12px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   transition: opacity 0.2s ease-in-out;
   z-index: 10;
   opacity: 1;
@@ -17,18 +17,19 @@
   margin: 0 auto;
   max-width: 1500px;
   display: flex;
+  height: 58px;
   justify-content: space-between;
   align-items: center;
 }
 
 .header-logo-wrapper{
-  width:38px;
-  height: 38px;
+  width:70px;
+  height: 100%;
 }
 
 .header-logo-img{
-  width: 100%;
-  height: 100%;
+  width: 44px;
+  height: 44px;
 }
 
 .header-menu-buttom{
@@ -48,7 +49,7 @@
 /* --------------------- nav ------------------ */
 
 .nav-wrapper{
-  background-color: rgb(193, 193, 193);
+  background-color: rgb(255, 255, 255);
   position: absolute;
   width: 100%;
   height: 300px;
@@ -127,4 +128,112 @@
 
 .visible{
   display: block;
+}
+
+.header-logo-wrapper span{
+  display: none;
+}
+
+@media screen and (min-width: 768px){
+  .header-wrapper{
+    padding: 0;
+    height: 58px;
+  }
+
+  .header-logo-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 19px;
+    height: 100%;
+    width: 400px;
+  }
+
+  .header-logo-wrapper a{
+    height: 44px;
+  }
+
+  .header-content-wrapper{
+    padding:  0 34px;
+  }
+
+  .header-menu-buttom{
+    display: none;
+  }
+
+  .header-logo-img{
+    width: 44px;
+    height: 44px;
+  }
+
+  .nav-wrapper{
+    position: static;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 58px;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+  }
+
+.nav-ul{
+  width: 100%;
+  height: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 0px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 9;
+}
+
+.nav-content-wrapper{
+  width:140px;
+  height: 32px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.nav-content{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 180ms ease-in-out;
+}
+
+.nav-close{
+  display: none;
+}
+
+.nav-content:hover{
+  background-color:transparent ;
+}
+.nav-content:focus{
+  background-color:transparent ;
+}
+
+
+}
+
+@media screen and (min-width:992px){
+  .header-logo-wrapper span{
+    display: block;
+    font-weight: 500;
+    font-size: 1.62rem;
+  }
+
+  .header-logo-wrapper a{
+    text-decoration: none;
+    color: var(--colorOscuro);  
+  }
 }

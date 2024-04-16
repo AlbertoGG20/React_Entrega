@@ -36,6 +36,7 @@ function Header(props) {
       <div className="header-content-wrapper">
         <div className="header-logo-wrapper">
           <a href="/"><img className="header-logo-img" src="/img/logo.png" alt="logo" /></a>
+          <a href="/"><span>Ruta del agua</span></a>
         </div>
         <svg onClick={activ} className="header-menu-buttom" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path stroke='none' clip-rule="evenodd" d="M0 1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0H30.5C30.8978 0 31.2794 0.158035 31.5607 0.43934C31.842 0.720644 32 1.10218 32 1.5C32 1.89782 31.842 2.27936 31.5607 2.56066C31.2794 2.84196 30.8978 3 30.5 3H1.5C1.10218 3 0.720644 2.84196 0.43934 2.56066C0.158035 2.27936 0 1.89782 0 1.5ZM0 10C0 9.60218 0.158035 9.22064 0.43934 8.93934C0.720644 8.65804 1.10218 8.5 1.5 8.5H30.5C30.8978 8.5 31.2794 8.65804 31.5607 8.93934C31.842 9.22064 32 9.60218 32 10C32 10.3978 31.842 10.7794 31.5607 11.0607C31.2794 11.342 30.8978 11.5 30.5 11.5H1.5C1.10218 11.5 0.720644 11.342 0.43934 11.0607C0.158035 10.7794 0 10.3978 0 10ZM1.5 17C1.10218 17 0.720644 17.158 0.43934 17.4393C0.158035 17.7206 0 18.1022 0 18.5C0 18.8978 0.158035 19.2794 0.43934 19.5607C0.720644 19.842 1.10218 20 1.5 20H30.5C30.8978 20 31.2794 19.842 31.5607 19.5607C31.842 19.2794 32 18.8978 32 18.5C32 18.1022 31.842 17.7206 31.5607 17.4393C31.2794 17.158 30.8978 17 30.5 17H1.5Z" fill="currentColor" />
@@ -46,8 +47,8 @@ function Header(props) {
           </svg>
           <ul className="nav-ul">
             <li className="nav-content-wrapper"><a className="nav-content" href="/">Inicio</a></li>
-            <li className="nav-content-wrapper"><a className="nav-content" href="/gallery">Galeria de fotos</a></li>
-            <li className="nav-content-wrapper"><a className="nav-content" href="#">Sobre Nosotros</a></li>
+            <li className="nav-content-wrapper"><a className="nav-content" href="/gallery">Galeria</a></li>
+            <li className="nav-content-wrapper"><a className="nav-content" href="/historia">Historia</a></li>
           </ul>
           <div className={active ? 'nav-out-canva  visible' : 'nav-out-canva'} onClick={desactiv}>
           </div>
