@@ -1,100 +1,197 @@
-.telde-main{
-/*   background-color:#E9E7DE; */
-  padding-top: 120px;
-  padding: 120px 52px 32px 52px;
-  max-width: 1500px;
-  margin: 0 auto;
-}
 
-.telde-titulo-wrapper{
-  border-bottom: 1px solid;
-  width: 70%;
+.telde-main{
+  padding: 84px 32px;
 }
 
 .telde-titulo{
+  font-style: italic;
   font-weight: 500;
   font-family: "Barlow Condensed", sans-serif;
-  font-style: italic;
   color: var(--colorPrincipal);
+  font-size: 2.6rem;
+  border-bottom:1px solid var(--colorSecundario) ;
+  margin-top: 32px;
 }
+
 
 .telde-section1{
   margin-top: 32px;
   display: flex;
-  gap: 52px;
-  height: 520px;
-
-  .telde-content-wrapper{
-    max-width: 680px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 19px;
-
-    .telde-texto-wrapper{
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      width: 100%;
-
-      h3{
-        font-size: 1.62rem;
-        font-family: "Barlow Condensed", sans-serif;
-        font-style: italic;
-        font-weight: 400;
-      }
-
-     p{
-        font-size: 1rem;
-        font-weight: 300;
-        color:#5E5E5E;
-      }
-    }
-
-  }
-  .telde-img1-wrapper{
-    width: 100%;
-    height: 100%;
-    margin-right: 54px;
-    display: flex;
-
-    justify-content: end;
-    align-items: center;
-  }
-
-    .telde-img1{
-      min-width: 80%;
-      max-width: 838px;
-      min-height: 350px;
-      max-height: 464px;
-      object-fit: cover;
-      z-index: 3;
-    }
-
-    .section-box-shadow{
-      width: 620px;
-      height: 450px;
-      background-color: #c1c1c1;
-      position:absolute;
-      top: 295px;
-      right: 13%;
-      z-index: 2;
-    }
-
-
+  flex-direction: column-reverse;
 }
 
-.telde-titulo2-wrapper{
+.telde-main h3{
   font-family: "Barlow Condensed", sans-serif;
   font-style: italic;
-  margin-top: 84px;
+  font-weight: 400;
+  font-size: 1.62rem;  
+}
+
+.telde-main p{
+  font-size: 1rem;
+  font-weight: 300;
+  color:#5E5E5E;
+}
+
+.telde-content-wrapper{
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.telde-texto-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.telde-img1{
+  width: 100%;
+  height: auto;
 }
 
 .telde-section2{
-  margin-top: 54px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.telde-img2{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.telde-section3{
+  margin-top: 32px;
+  gap: 7px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.telde-img3-wrapper{
+  display: flex;
+  width: 100%;
+  gap: 7px;
+  overflow: hidden;
+
+}
+
+.telde-img3{
+  width: 40%;
+  object-fit: cover;
+}
+
+.telde-img4{
+  width: 60%;
+  object-fit: cover;
+
+}
+
+.telde-section4{
+  margin-top: 32px;
+  gap: 7px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.telde-img5{
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  
+
+  .telde-main{
+    /*   background-color:#E9E7DE; */
+      padding-top: 120px;
+      padding: 120px 52px 32px 52px;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+    
+    .telde-titulo-wrapper{
+      border-bottom: 1px solid var(--colorPrincipal);
+      width: 70%;
+    }
+    
+    .telde-titulo{
+      color: var(--colorPrincipal);
+      font-size: 2.6rem;
+    }
+    
+    .telde-section1{
+      margin-top: 32px;
+      display: flex;
+      gap: 52px;
+      height: 520px;
+    
+      .telde-content-wrapper{
+        max-width: 680px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 19px;
+    
+        .telde-texto-wrapper{
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          width: 100%;
+        }
+    
+      }
+      .telde-img1-wrapper{
+        width: 100%;
+        height: 100%;
+        margin-right: 54px;
+        display: flex;
+    
+        justify-content: end;
+        align-items: center;
+      }
+    
+        .telde-img1{
+          min-width: 80%;
+          max-width: 838px;
+          min-height: 350px;
+          max-height: 464px;
+          object-fit: cover;
+          z-index: 3;
+        }
+    
+        .section-box-shadow{
+          width: 620px;
+          height: 450px;
+          background-color: #c1c1c1;
+          position:absolute;
+          top: 295px;
+          right: 13%;
+          z-index: 2;
+        }
+    
+    
+    }
+    
+    .telde-titulo2-wrapper{
+      font-family: "Barlow Condensed", sans-serif;
+      font-style: italic;
+      margin-top: 84px;
+      display: flex;
+      flex-direction: row-reverse;
+      border-bottom: 1px solid var(--colorPrincipal);
+      max-width: 700px;
+      margin-left: auto;
+    }
+    
+    .telde-section2{
+      margin-top: 54px;
+    
+    
+    }
+
 
 
 }

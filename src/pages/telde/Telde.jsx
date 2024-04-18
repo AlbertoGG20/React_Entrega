@@ -1,5 +1,6 @@
 import "./Telde.css";
 import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
 
 function Telde() {
   return (
@@ -104,7 +105,7 @@ function Telde() {
 
 
       </main>
-
+      <Footer />
     </>
   );
 } export default Telde; 
