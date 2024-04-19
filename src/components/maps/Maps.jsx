@@ -7,7 +7,7 @@ function Maps() {
     <section className='maps-wrapper'>
       <div className='maps-text-wrapper'>
         <h2>Ubicación</h2>
-        <p>Esta es la direccion donde empieza esta ruta.</p>
+        <p>Esta es la dirección donde empieza esta ruta.</p>
       </div>
       <MapContainer center={[27.996322, -15.421502]} zoom={17} scrollWheelZoom={false}>
         <TileLayer

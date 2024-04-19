@@ -11,7 +11,11 @@ function BentoGallery() {
     <>
       <Header page="gallery" />
       <main className="bento-main">
-        <h1>Galeria de las fotos de esta maravillosa aventura</h1>
+        <div className="gallery-info-wrapper">
+          <h1>Nuestra aventura</h1>
+          <p>Explora nuestra galería de la ruta y déjate cautivar por la belleza de la naturaleza. Desde los puentes hasta sus caminos, descubre la aventura que te espera en nuestra ruta."</p>
+
+        </div>
         <div className="bento-wrapper">
           {photos.map((photos, index) => (
             <BentoCard key={index} index={index} bentoUrl={`/img/${photos.fileName}`} bentoName={`${photos.title}`} bentoDescription={`${photos.description}`} />

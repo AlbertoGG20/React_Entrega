@@ -15,7 +15,7 @@ function Section2() {
           <GalleryCard key={index} fileName={`/img/${photos.fileName}`} altText={`${photos.altText}`} title={`${photos.title}`} description={`${photos.description}`} />
         ))}
       </div>
-      <a href="#" className="section2-content-link">Ver más fotos</a>
+      <a href="/gallery" className="section2-content-link">Ver más fotos</a>
     </section>
   )
 } export default Section2;
