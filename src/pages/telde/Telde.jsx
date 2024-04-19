@@ -31,7 +31,6 @@ function Telde() {
           </div>
           <div className="telde-img1-wrapper">
             <img className="telde-img1" src="/img/prueba.jpg" alt="" />
-            <div className="section-box-shadow"></div>
           </div>
         </section>
 
@@ -41,14 +40,14 @@ function Telde() {
 
         <section className="telde-section2">
           <div className="telde-content-wrapper">
-            <div className="telde-texto-wrapper">
+            <div className="telde-texto2-wrapper">
               <h3>Acequia y lavadero de la Heredad</h3>
               <p className="telde-texto">
                 Datan del siglo XX. Durante todo un siglo han sido encuentro de mujeres que se acercan a este espacio cargadas con sus baldes y barreños para lavar la ropa. Aprovechan para las tertulias y las novelerías mientras secan los
                 ropajes al sol. Se ha mantenido activo como punto de lavado hasta la actualidad.
               </p>
             </div>
-            <div className="telde-texto-wrapper">
+            <div className="telde-texto2-wrapper">
               <h3>Acueducto de los Ríos</h3>
               <p className="telde-texto">
                 Construido según planos diseñados por el teldense Juan de León y Castillo a finales del siglo XIX, constituye una de las piezas emblemáticas de Telde, y forma parte de la importante historia de acueductos que canalizaban y repartían las aguas por toda la vega agrícola.

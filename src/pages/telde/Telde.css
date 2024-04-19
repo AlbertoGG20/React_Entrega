@@ -104,7 +104,6 @@
   
 
   .telde-main{
-    /*   background-color:#E9E7DE; */
       padding-top: 120px;
       padding: 120px 52px 32px 52px;
       max-width: 1500px;
@@ -122,16 +121,16 @@
     }
     
     .telde-section1{
-      margin-top: 32px;
+      margin-top: 54px;
       display: flex;
+      flex-direction: row;
       gap: 52px;
-      height: 520px;
     
       .telde-content-wrapper{
-        max-width: 680px;
+        width: 980px;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         justify-content: center;
         gap: 19px;
     
@@ -145,40 +144,25 @@
       }
       .telde-img1-wrapper{
         width: 100%;
-        height: 100%;
-        margin-right: 54px;
         display: flex;
-    
-        justify-content: end;
+        justify-content: center;
         align-items: center;
       }
     
         .telde-img1{
-          min-width: 80%;
-          max-width: 838px;
-          min-height: 350px;
+          width: 100%;
+          height: 100%;
           max-height: 464px;
           object-fit: cover;
           z-index: 3;
-        }
-    
-        .section-box-shadow{
-          width: 620px;
-          height: 450px;
-          background-color: #c1c1c1;
-          position:absolute;
-          top: 295px;
-          right: 13%;
-          z-index: 2;
-        }
-    
-    
+        }  
+  
     }
     
     .telde-titulo2-wrapper{
       font-family: "Barlow Condensed", sans-serif;
       font-style: italic;
-      margin-top: 84px;
+      margin-top: 19px;
       display: flex;
       flex-direction: row-reverse;
       border-bottom: 1px solid var(--colorPrincipal);
@@ -187,11 +171,66 @@
     }
     
     .telde-section2{
+      padding: 34px 0;
       margin-top: 54px;
-    
-    
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 52px;
+    }
+    .telde-content-wrapper{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 19px;
     }
 
+    .telde-img2-wrapper{
+      width: 934px;
+      display: flex;
+      align-items: center ;
+    }
 
+    .telde-img2{
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
 
+    .telde-section3{
+      margin-top: 84px;
+      gap: 52px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .telde-img3-wrapper{
+      display: flex;
+      width: 100%;
+      gap: 52px;
+      overflow: hidden;
+    }
+
+    .telde-section4{
+      margin-top: 100px;
+      gap: 52px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .telde-img5-wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .telde-img5{
+      width: 100%;
+      height: 90%;
+      max-height: 464px;
+      object-fit: cover;
+    }
 }

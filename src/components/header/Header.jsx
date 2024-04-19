@@ -5,7 +5,6 @@ function Header(props) {
   const [head, setHead] = useState('header-wrapper  show-back');
   const [active, setActive] = useState(false);
 
-  /* Appear or disappear the header menu, in the home page, the header doesn't view in the first 600 px to display the entires background photo */
   const change = () => {
     if (window.scrollY < 600 && props.page == 'home') {
       setHead('header-wrapper show-back');
@@ -18,7 +17,6 @@ function Header(props) {
   window.addEventListener('load', change);
   window.addEventListener('scroll', change);
 
-  /* Appear or disappear the nav menu */
   const activ = () => {
     if (active == false) {
       setActive(true);
@@ -47,7 +45,7 @@ function Header(props) {
           </svg>
           <ul className="nav-ul">
             <li className="nav-content-wrapper"><a className="nav-content" href="/">Inicio</a></li>
-            <li className="nav-content-wrapper"><a className="nav-content" href="/gallery">Galeria</a></li>
+            <li className="nav-content-wrapper"><a className="nav-content" href="/gallery">Galería</a></li>
             <li className="nav-content-wrapper"><a className="nav-content" href="/historia">Historia</a></li>
           </ul>
           <div className={active ? 'nav-out-canva  visible' : 'nav-out-canva'} onClick={desactiv}>

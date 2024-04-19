@@ -12,8 +12,8 @@ function BentoGallery() {
       <Header page="gallery" />
       <main className="bento-main">
         <div className="gallery-info-wrapper">
-          <h1>Galería de las fotos de esta aventura</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda esse ipsam magni tempora architecto repudiandae iste harum dicta earum iure ab sed ut ratione quo non adipisci animi excepturi a, doloribus provident culpa? Sit quas eaque praesentium reprehenderit rerum?</p>
+          <h1>Nuestra aventura</h1>
+          <p>Explora nuestra galería de la ruta y déjate cautivar por la belleza de la naturaleza. Desde los puentes hasta sus caminos, descubre la aventura que te espera en nuestra ruta."</p>
 
         </div>
         <div className="bento-wrapper">
