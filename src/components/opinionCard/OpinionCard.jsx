@@ -10,8 +10,8 @@ function OpinionCard() {
 
 
   const numberImg = () => {
-    if (number === null){
-      setNumber (Math.floor(Math.random() * 4) + 1);
+    if (number === null) {
+      setNumber(Math.floor(Math.random() * 4) + 1);
     }
 
   }
