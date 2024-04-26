@@ -4,16 +4,24 @@ import { FaStar } from "react-icons/fa";
 
 
 function OpinionCard() {
-  const random = Math.floor(Math.random() * 4) + 1;
   const [rating, setRating] = useState(null);
   const [rateColor, setColor] = useState(null);
+  const [number, setNumber] = useState(1);
+
+
+  const numberImg = () => {
+    if (number === null){
+      setNumber (Math.floor(Math.random() * 4) + 1);
+    }
+
+  }
 
   return (
 
     <>
       <div className="opinion-card-wrapper">
         <div className="opinion-card-head">
-          <div className={`opinion-user-img user-img-${random}`}>
+          <div className={`opinion-user-img user-img-${number}`}>
 
           </div>
           <div className="opinion-card-head-info">
@@ -24,7 +32,7 @@ function OpinionCard() {
               return (
                 <>
                   <label >
-                    <input type="radio" name="rate"
+                    <input className="opinion-type" type="radio" name="rate"
                       value={currentRate}
                       onClick={() => setRating(currentRate)}
                     />
