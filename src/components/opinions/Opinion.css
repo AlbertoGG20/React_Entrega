@@ -1,0 +1,13 @@
+.opinions-wrapper{
+    max-width: 1500px;
+    padding: 2rem;
+}
+
+.opinions-wrapper-cards{
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}

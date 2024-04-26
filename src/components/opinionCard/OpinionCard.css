@@ -1,0 +1,44 @@
+.opinion-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 24rem;
+    height: 16rem;
+    padding: 1rem 1.6rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.opinion-card-head{
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opinion-user-img{
+    width: 3rem;
+    height: 3rem;
+    background-color: grey;
+}
+
+.opinion-card-head-info h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.opinion-card-star{
+    color: grey;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.opinion-card-star:hover{
+    color: gold;
+}
+
+.opinion-card-body{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--colorTerciario);
+    text-align: start;
+}
