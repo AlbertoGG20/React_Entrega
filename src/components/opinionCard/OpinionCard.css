@@ -47,29 +47,3 @@
     color: var(--colorTerciario);
     text-align: start;
 }
-
-
-.user-img-1{
-  background-image: url("/userImage/1.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.user-img-2{
-  background-image: url("/userImage/2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.user-img-3{
-  background-image: url("/userImage/3.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.user-img-4{
-  background-image: url("/userImage/4.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
