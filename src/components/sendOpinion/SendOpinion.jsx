@@ -17,7 +17,7 @@ function AddOpinon() {
   }
 
   const changeImg = () => {
-    setImg(Math.floor(Math.random() * 7) + 1)
+    setImg(Math.floor(Math.random() * 6) + 1)
   }
 
   const changeStar = (e) => {

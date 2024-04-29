@@ -11,7 +11,7 @@ function OpinionCard(img, star, text, user) {
 
   const numberImg = () => {
     if (number === null) {
-      setNumber(Math.floor(Math.random() * 4) + 1);
+      setNumber(Math.int(Math.random() * 7) + 1);
     } else {
       setNumber(img);
     }
@@ -23,7 +23,6 @@ function OpinionCard(img, star, text, user) {
       <div className="opinion-card-wrapper">
         <div className="opinion-card-head">
           <div className={`opinion-user-img user-img-${number}`}>
-
           </div>
           <div className="opinion-card-head-info">
             <h3>{user}</h3>
