@@ -107,3 +107,32 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.opinion-crud-option-wrapper{
+  margin-top:1rem ;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+
+}
+
+.btn-option{
+  width: 4rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-family: var(--fontSecundaria);
+  font-weight: 600;
+  cursor: pointer;
+  border-style: none;
+}
+
+.option-edit{
+  background-color:  rgb(241, 210, 107);
+
+
+}
+
+.option-delete{
+  background-color: rgb(253, 156, 156);
+
+}

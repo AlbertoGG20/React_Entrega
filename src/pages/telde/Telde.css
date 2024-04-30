@@ -6,7 +6,7 @@
 .telde-titulo{
   font-style: italic;
   font-weight: 500;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family:var(--fontSecundaria);
   color: var(--colorPrincipal);
   font-size: 2.6rem;
   border-bottom:1px solid var(--colorSecundario) ;

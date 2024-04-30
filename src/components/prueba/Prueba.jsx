@@ -2,13 +2,12 @@ import { useEffect, useState } from "react";
 import OpinionService from "../../services/firebase/opinions.services";
 import { FaStar } from "react-icons/fa";
 
-
 function Opinion(page) {
   const [opinion, setOpinion] = useState([]);
   const [rateColor, setColor] = useState(null);
   const [number, setNumber] = useState(1);
   const [rating, setRating] = useState();
-
+  const [edit, setEdit] = useState();
 
   const getOpinion = () => {
     OpinionService.getOpinions().then((items) => {
@@ -22,19 +21,16 @@ function Opinion(page) {
           img: data.img,
           star: data.star,
           text: data.text,
-          user: data.user
-        }
+          user: data.user,
+        };
         auxOpinions.push(auxOpinion);
-      }) <
-        setOpinion(auxOpinions);
+      }) < setOpinion(auxOpinions);
     });
-  }
-
+  };
 
   useEffect(() => {
     getOpinion();
-  }, [])
-
+  }, []);
 
   return (
     <>
@@ -50,22 +46,31 @@ function Opinion(page) {
                 const isGold = currentRate <= c.star;
                 return (
                   <>
-                    <label >
-                      <input className="opinion-type" type="radio" name="rate"
+                    <label>
+                      <input
+                        className="opinion-type"
+                        type="radio"
+                        name="rate"
                         value={currentRate}
                         onClick={() => setRating(currentRate)}
                       />
                       <FaStar color={isGold ? "gold" : "grey"} />
                     </label>
                   </>
-                )
+                );
               })}
-
             </div>
           </div>
           <div className="opinion-card-body">
             <p>{c.text}</p>
           </div>
+          if (prop.page === "admin")
+          {
+            <div className="opinion-crud-option-wrapper">
+              <button className="btn-option option-edit">Editar</button>
+              <button className="btn-option option-delete">Eliminar</button>
+            </div>
+          }
         </div>
       ))}
     </>
