@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 function AddOpinon() {
   const [name, setName] = useState("");
   const [text, setText] = useState("");
-  const [img, setImg] = useState("");
+  const [img, setImg] = useState(Math.floor(Math.random() * 7));
   const [star, setStar] = useState("");
 
   const changeName = (e) => {
@@ -17,7 +17,7 @@ function AddOpinon() {
   }
 
   const changeImg = () => {
-    setImg(Math.floor(Math.random() * 6) + 1)
+    setImg(Math.floor(Math.random() * 7)+1)
   }
 
   const changeStar = (e) => {

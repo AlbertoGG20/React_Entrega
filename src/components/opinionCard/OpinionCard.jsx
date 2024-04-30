@@ -10,11 +10,8 @@ function OpinionCard(img, star, text, user) {
 
 
   const numberImg = () => {
-    if (number === null) {
-      setNumber(Math.int(Math.random() * 7) + 1);
-    } else {
       setNumber(img);
-    }
+
   }
 
   return (

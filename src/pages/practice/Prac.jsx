@@ -10,7 +10,7 @@ function Prac() {
   return (
     <>
       <p>Opiniones</p>
-      <Prueba />
+      <Prueba page="admin"/>
       <SendOpinon />
     </>
   );

@@ -3,7 +3,7 @@ import OpinionService from "../../services/firebase/opinions.services";
 import { FaStar } from "react-icons/fa";
 
 
-function Opinion() {
+function Opinion(page) {
   const [opinion, setOpinion] = useState([]);
   const [rateColor, setColor] = useState(null);
   const [number, setNumber] = useState(1);
