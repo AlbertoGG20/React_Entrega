@@ -100,7 +100,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .date-img{
     display: block;
     height: 120%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1.2/1;
     transform: scalex(-1);
   }
 

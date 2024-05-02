@@ -16,8 +16,8 @@ function Home() {
       <Legacy />
       <Section2 />
       <DatePicker />
-      <Maps />
       <Opinions />
+      <Maps />
       <Footer />
     </>
   )

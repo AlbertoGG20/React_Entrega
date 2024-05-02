@@ -57,8 +57,6 @@ function PruebaDef() {
 
   const deleteOpinion = (key) => {
     opinionsServices.deleteOpinion(key).then((opinion) => {
-      const updatedOpinions = opinion.filter((item) => item.key !== key);
-      setOpinion(updatedOpinions);
     })
 
   }
@@ -76,7 +74,6 @@ function PruebaDef() {
     setStar(e.target.value)
   }
   const addNewOpinion = (e) => {
-    e.preventDefault();
     changeImg();
     saveOpinions(e.target.name.value, e.target.text.value, img, e.target.star.value)
   }
@@ -106,6 +103,7 @@ function PruebaDef() {
 
   return (
     <div className="opinions-crud-wrapper">
+      <h1>Añadir opinion</h1>
       <div className="opinion-form-wrapper">
         <form className={isOpen ? "opinion-form form-hidden " : "opinion-form"} onSubmit={addNewOpinion}>
           <div className="name-input-wrapper">
@@ -118,21 +116,13 @@ function PruebaDef() {
           </div>
           <div className="star-input-wrapper">
             <label htmlFor="star">Valoración</label>
-            <input className="opinion-input-star" list="stars" id="star" name="star" min={0} max={5} value={star} onChange={changeStar} />
-            <datalist id="stars" >
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </datalist>
+            <input className="opinion-input-star" type="number" id="star" name="star" min={0} max={5} value={star} onChange={changeStar} />
           </div>
           <button className="btn-option option-add" type="submit">Añadir</button>
         </form>
       </div>
 
-      <h1>Opiniones de la gente</h1>
+      <h2>Opiniones de la gente</h2>
 
       <div className="opinion-show-container">
         {opinion.map((c, index) => (
@@ -179,7 +169,7 @@ function PruebaDef() {
         <div className={isOpen ? 'modal-wrapper  visible-modal' : 'modal-wrapper'}>
           <div className="modal-content">
             <div className="modal-header">
-              <h2>Editar Opinión</h2>
+              <h2 className="modal-tittle">Editar Opinión</h2>
               <button onClick={closeModal} className="modal-close">×</button>
             </div>
             <div className="modal-body">
@@ -194,15 +184,8 @@ function PruebaDef() {
                 </div>
                 <div className="modal-input-wrapper">
                   <label htmlFor="star">Valoración  </label>
-                  <input className="modal-input modal-star-input" value={star} list="stars-modal" id="star" name="star" onChange={changeStar} />
-                  <datalist id="stars-modal" >
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                  </datalist>
+                  <input className="modal-input modal-star-input" value={star} type="number" id="star" name="star" min={0} max={5} onChange={changeStar} />
+
                 </div>
                 <button className="btn-option option-add" onClick={addUpdateOpinion} type="submit">Cambiar</button>
               </form>

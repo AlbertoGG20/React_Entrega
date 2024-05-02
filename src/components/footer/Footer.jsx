@@ -38,6 +38,7 @@ function Footer() {
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/gallery">Galería</a></li>
                 <li><a href="/historia">Historia</a></li>
+                <li><a href="/opinions">Crud</a></li>
               </ul>
             </nav>
             <nav className="footer-nav-web-pages">

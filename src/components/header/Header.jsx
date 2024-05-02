@@ -47,6 +47,7 @@ function Header(props) {
             <li className="nav-content-wrapper"><a className="nav-content" href="/">Inicio</a></li>
             <li className="nav-content-wrapper"><a className="nav-content" href="/gallery">Galería</a></li>
             <li className="nav-content-wrapper"><a className="nav-content" href="/historia">Historia</a></li>
+            <li className="nav-content-wrapper"><a className="nav-content" href="/opinions">Crud</a></li>
           </ul>
           <div className={active ? 'nav-out-canva  visible' : 'nav-out-canva'} onClick={desactiv}>
           </div>
