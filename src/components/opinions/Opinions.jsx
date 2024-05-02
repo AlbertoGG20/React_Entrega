@@ -40,7 +40,7 @@ function Opinion() {
       <div className="opinions-wrapper">
         <h2>Opiniones</h2>
         <div className="opinions-wrapper-cards">
-          {opinion.map((c) => (
+          {opinion.slice(0, 6).map((c) => (
             <div className="opinion-card-wrapper" key={c.key}>
               <div className="opinion-card-head">
                 <div className={`opinion-user-img user-img-${c.img}`}></div>

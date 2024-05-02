@@ -1,4 +1,4 @@
-import { ref, get, push } from "firebase/database"
+import { ref, get, push, remove, update } from "firebase/database"
 import db from "./firebase.config";
 
 
@@ -8,7 +8,7 @@ const getOpinions = () => {
   return get(dbRef);
 }
 
-const addOpinions = (text, user, img, star) => {
+const addOpinions = (user, text, img, star) => {
   push(dbRef, {
     text: text,
     user: user,
@@ -17,8 +17,40 @@ const addOpinions = (text, user, img, star) => {
   })
 }
 
+const getOpinionKey = (key) => {
+  return get(ref(db, `/opinions/${key}`));
+}
+
+const deleteOpinion = (key) => {
+  remove(ref(db, `/opinions/${key}`));
+}
+
+const updateOp = (key, name, text, img, star) => {
+  remove(ref(db, `/opinions/${key}`));
+  push(dbRef, {
+    text: text,
+    user: name,
+    img: img,
+    star: star
+  })
+}
+
+const cambioOp = (key, name, text, img, star) => {
+  const upDb = ref(db, `/opinions/${key}`);
+  update(upDb, {
+    text: text,
+    user: name,
+    img: img,
+    star: star
+  })
+}
+
 
 export default {
   getOpinions,
-  addOpinions
+  addOpinions,
+  getOpinionKey,
+  updateOp,
+  deleteOpinion,
+  cambioOp
 }

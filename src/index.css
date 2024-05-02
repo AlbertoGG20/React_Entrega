@@ -8,6 +8,7 @@
   --fontPrincipal: "Montserrat",system-ui, Avenir, Helvetica, Arial, sans-serif;
   --fontSecundaria:  "Barlow Condensed", sans-serif;
   
+  font-family: var(--fontPrincipal);
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
