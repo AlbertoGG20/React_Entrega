@@ -5,6 +5,7 @@ import Legacy from "../../components/legacy/Legacy";
 import Maps from "../../components/maps/Maps";
 import Section1 from "../../components/section1/Section1";
 import Section2 from "../../components/section2/Section2";
+import Opinions from "../../components/opinions/Opinions"
 import './Home.css';
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
       <Legacy />
       <Section2 />
       <DatePicker />
+      <Opinions />
       <Maps />
       <Footer />
     </>
