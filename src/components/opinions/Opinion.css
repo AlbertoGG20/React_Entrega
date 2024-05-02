@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 23rem;
+    width: 24rem;
     padding: 1rem 1.6rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
@@ -136,14 +136,10 @@ width: 100%;
 }
 
 .option-delete{
-  background-color: rgb(253, 156, 156);
+  background-color: rgb(202, 124, 124);
 }
 
-.option-add{
-  background-color: var(--colorPrincipal);
-  color: white;
-  font-weight: 500;
-}
+
 
 
 .hidden{
@@ -154,3 +150,17 @@ width: 100%;
   display:flex;
 }
 
+
+@media screen and (min-width: 690px) {
+  .opinion-card-wrapper{
+      width: 19rem;
+  }
+  
+}
+
+@media screen and (min-width: 900px) {
+  .opinion-card-wrapper{
+      width: 24rem;
+  }
+  
+}
