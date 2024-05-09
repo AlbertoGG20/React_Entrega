@@ -1,3 +1,87 @@
+@font-face {
+  font-family: 'mont';
+  src: url('public/fonts/Montserrat-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mont';
+  src: url('public/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mont';
+  src: url('public/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mont';
+  src: url('public/fonts/Montserrat-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'mont';
+  src: url('public/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mont';
+  src: url('public/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Definir @font-face para Barlow Condensed */
+@font-face {
+  font-family: 'Barl';
+  src: url('public/fonts/BarlowCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barl';
+  src: url('public/fonts/BarlowCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barl';
+  src: url('public/fonts/BarlowCondensed-MediumItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Barl';
+  src: url('public/fonts/BarlowCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barl';
+  src: url('public/fonts/BarlowCondensed-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Barl';
+  src: url('public/fonts/BarlowCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 :root {
   --colorPrincipal: #2682c0;
   --colorSecundario: #315969;
@@ -5,9 +89,10 @@
   --colorTerciario: #4E4E4E;
   --colorOscuro: #000;
   --colorNeutro : #E2E2E2;
-  --fontPrincipal: "Montserrat",system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --fontSecundaria:  "Barlow Condensed", sans-serif;
+  --fontPrincipal: "mont", impact;
+  --fontSecundaria:  "Barl",impact, sans-serif;
   
+
   font-family: var(--fontPrincipal);
   font-weight: 400;
   font-style: normal;

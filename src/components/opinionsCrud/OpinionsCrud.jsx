@@ -47,16 +47,33 @@ function PruebaDef() {
   }
 
   const addUpdateOpinion = (e) => {
-    opinionsServices.cambioOp(keyCard, name, text, img, star).then((send) => {
-      alert("agregado")
+    opinionsServices.updateOp(keyCard, name, text, img, star).then((send) => {
+      setName("");
+      setText("");
+      setStar("");
+      alert("cambiado");
     })
-    setName("");
-    setText("");
-    setStar("");
+
   }
 
   const deleteOpinion = (key) => {
     opinionsServices.deleteOpinion(key).then((opinion) => {
+      getOpinion();
+    })
+  }
+
+  const addNewOpinion = (e) => {
+    e.preventDefault();
+    changeImg();
+    saveOpinions(e.target.name.value, e.target.text.value, img, e.target.star.value)
+  }
+
+  const saveOpinions = (name, text, img, star) => {
+    OpinionService.addOpinions(name, text, img, star).then((response) => {
+      setName("");
+      setText("");
+      setStar("");
+      getOpinion();
     })
 
   }
@@ -73,21 +90,10 @@ function PruebaDef() {
   const changeStar = (e) => {
     setStar(e.target.value)
   }
-  const addNewOpinion = (e) => {
-    changeImg();
-    saveOpinions(e.target.name.value, e.target.text.value, img, e.target.star.value)
-  }
 
-  const saveOpinions = (name, text, img, star) => {
-    OpinionService.addOpinions(name, text, img, star).then((response) => {
-      console.log("ok, bien")
-    })
-    setName("");
-    setText("");
-    setStar("");
-  }
 
   const closeModal = () => {
+    document.body.style.overflow = 'auto';
     setIsOpen(false);
     setName("");
     setText("");
@@ -95,6 +101,7 @@ function PruebaDef() {
   }
 
   const openModal = (key) => {
+    document.body.style.overflow = 'hidden';
     setIsOpen(true);
     setKeyCard(key);
     getOpinionKey(key);
@@ -103,7 +110,20 @@ function PruebaDef() {
 
   return (
     <div className="opinions-crud-wrapper">
-      <h1>Añadir opinion</h1>
+      <div className="opinions-head">
+        <h1>Añadir opinion</h1>
+        <select className="opinion-select" name="rank" id="rank">
+
+          <option value="0 Estrella">Selecciona</option>
+          <option value="0 Estrella">0 Estrella</option>
+          <option value="1 Estrella">1 Estrella</option>
+          <option value="2 Estrella">2 Estrella</option>
+          <option value="3 Estrella">3 Estrella</option>
+          <option value="4 Estrella">4 Estrella</option>
+          <option value="5 Estrella">5 Estrella</option>
+
+        </select>
+      </div>
       <div className="opinion-form-wrapper">
         <form className={isOpen ? "opinion-form form-hidden " : "opinion-form"} onSubmit={addNewOpinion}>
           <div className="name-input-wrapper">
@@ -167,7 +187,7 @@ function PruebaDef() {
 
       <>
         <div className={isOpen ? 'modal-wrapper  visible-modal' : 'modal-wrapper'}>
-          <div className="modal-content">
+          <div className={isOpen ? 'modal-content  show-modal' : 'modal-content'}>
             <div className="modal-header">
               <h2 className="modal-tittle">Editar Opinión</h2>
               <button onClick={closeModal} className="modal-close">×</button>

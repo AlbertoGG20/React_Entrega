@@ -117,7 +117,7 @@
 
  
 .modal-wrapper{
-    display: none; 
+  visibility: hidden;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -125,15 +125,34 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.4);
-    
+    background-color: rgba(0, 0, 0, 0.482);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    display: flex;
   }
   
+  .visible-modal{
+    opacity: 1;
+    visibility:visible;
+
+  }
   .modal-content{
     background-color: white;
+    background-color: aqua;
+    width: 45rem;
     margin: 20% auto;
     max-width:50rem;
+    scale: 0.6;
+    transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
+
+  .show-modal{
+    scale: 1;
+    opacity: 1;
+  }
+
+
   .modal-header{
     padding: 1rem 2rem;
     display: flex;
@@ -218,10 +237,31 @@
   
   }
 
-  .visible-modal{
-    display: block;
-    transition: all 0.5s ease-in-out;
+
+  .opinions-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .opinion-select{
+    height: 40px;
+    width: 120px;
+    background-color: var(--colorNeutro);
+    color: black;
+    padding: 8px 8px;
+  }
+
+  .opinion-select option{
+   background-color: red;
+   padding: 8px;
+    color: black;
+    width: 200px;
+    height: 40px;
+    border: none;
+  }
+
+
 
   @media screen and (min-width: 690px) {
     .name-input-wrapper{

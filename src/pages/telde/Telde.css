@@ -21,7 +21,7 @@
 }
 
 .telde-main h3{
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: var(--colorSecundario);
   font-style: italic;
   font-weight: 400;
   font-size: 1.62rem;  
@@ -160,7 +160,7 @@
     }
     
     .telde-titulo2-wrapper{
-      font-family: "Barlow Condensed", sans-serif;
+      font-family:var(--colorSecundario);
       font-style: italic;
       margin-top: 19px;
       display: flex;
