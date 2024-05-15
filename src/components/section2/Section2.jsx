@@ -5,7 +5,7 @@ import photos from '../../services/photos/photo';
 
 function Section2() {
   return (
-    <section className="section2-wrapper">
+    <section className="section2-wrapper" loading="lazy">
       <div className="section2-content-text-wrapper">
         <h2>Fotos</h2>
         <span>Algunas fotos de esta maravillosa aventura</span>

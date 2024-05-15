@@ -1,41 +1,41 @@
 @font-face {
   font-family: 'mont';
-  src: url('public/fonts/Montserrat-Light.ttf');
+  src: url('/fonts/Montserrat-Light.ttf');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'mont';
-  src: url('public/fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'mont';
-  src: url('public/fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'mont';
-  src: url('public/fonts/Montserrat-Italic.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'mont';
-  src: url('public/fonts/Montserrat-Medium.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'mont';
-  src: url('public/fonts/Montserrat-Bold.ttf') format('truetype');
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -43,42 +43,49 @@
 /* Definir @font-face para Barlow Condensed */
 @font-face {
   font-family: 'Barl';
-  src: url('public/fonts/BarlowCondensed-Light.ttf') format('truetype');
+  src: url('/fonts/BarlowCondensed-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Barl';
-  src: url('public/fonts/BarlowCondensed-Regular.ttf') format('truetype');
+  src: url('/fonts/BarlowCondensed-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Barl';
-  src: url('public/fonts/BarlowCondensed-MediumItalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Barl';
-  src: url('public/fonts/BarlowCondensed-Medium.ttf') format('truetype');
+  src: url('/fonts/BarlowCondensed-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Barl';
-  src: url('public/fonts/BarlowCondensed-MediumItalic.ttf') format('truetype');
+  src: url('/fonts/BarlowCondensed-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Barl';
-  src: url('public/fonts/BarlowCondensed-Bold.ttf') format('truetype');
+  src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barl';
+  src: url('/fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Barl';
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -151,4 +158,9 @@
 
 .stt a{
   color: black;
+}
+
+.leaflet-container {
+  height: 80vh;
+  width: 100%;
 }

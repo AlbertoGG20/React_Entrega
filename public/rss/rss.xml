@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+  <channel>
+    <title>Ruta del agua</title>
+    <link>https://rutadelagua.web.app/</link>
+    <description>Ruta del Agua pagina principal</description>
+    <item>
+      <title>Galeria ruta del agua</title>
+      <link>https://rutadelagua.web.app/gallery</link>
+      <description>Galería de la ruta del agua</description>
+    </item>
+    <item>
+      <title>Historia de la ruta del agua</title>
+      <link>https://rutadelagua.web.app/historia</link>
+      <description>Historia de telder y su ruta del agua</description>
+    </item>
+  </channel>
+
+</rss>

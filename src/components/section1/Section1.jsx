@@ -9,10 +9,10 @@ function Section1() {
 
   return (
     < >
-      <div className="section1-wrapper">
+      <div className="section1-wrapper" fetchpriority="high">
         <div className="section1-content-wrapper">
-          <h1 className="section1-content-title">Ruta del Agua</h1>
-          <span className="section1-content-text">Telde</span>
+          <h1 className="section1-content-title" fetchpriority="high">Ruta del Agua</h1>
+          <span className="section1-content-text" fetchpriority="high">Telde</span>
         </div>
       </div>
       <svg onClick={dropDown} className="Section1-svg-arrow" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">

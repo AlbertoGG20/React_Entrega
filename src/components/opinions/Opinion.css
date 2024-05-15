@@ -122,9 +122,13 @@ width: 100%;
 }
 
 .btn-option{
-  width: 4rem;
+  max-width: 5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: var(--fontSecundaria);
   font-weight: 600;
   cursor: pointer;

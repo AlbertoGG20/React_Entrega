@@ -26,6 +26,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .section-form{
   display: flex;
+  flex-direction: column;
   justify-content: start;
   align-items: start;
   padding: 4px 34px 8px;
@@ -36,8 +37,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 }
 
-.date-img{
-  display: none;
+
+.date-picker-content-wrapper{
+  display: flex;
 }
 
 .datePicker-wrapper{
@@ -97,15 +99,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     max-width:242px ;
   }
  
-  .date-img{
-    display: block;
-    height: 120%;
-    aspect-ratio: 1.2/1;
-    transform: scalex(-1);
-  }
-
   .datePicker-wrapper{
-    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -113,7 +107,47 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
   
   .section-form{
+    height:140px;
+    margin-bottom: 1rem;
     gap: 0;
+  }
+
+  .date-picker-content-wrapper{
+    flex-direction: row;
+    width: 100%;
+    height: 5rem;
+    justify-content: end;
+    align-items: end;
+    gap: 1rem;
+  }
+
+  .datePicker-wrapper{
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding:  2rem;
+  }
+
+  .datePicker-text-wrapper{
+    width: 60%;
+  }
+
+  .datePicker-label-name-wrapper{
+    width: 50%;
+  }
+
+  .datePicker-label-subname-wrapper{
+    width: 50%;
+  }
+
+  .datePicker-date-wrapper{
+    width: 30%;
+  }
+  
+  .btn-p{
+    align-self: center;
+    margin-top: 0.7rem;
   }
 
 }
