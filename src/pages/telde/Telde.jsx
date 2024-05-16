@@ -30,7 +30,7 @@ function Telde() {
             </div>
           </div>
           <div className="telde-img1-wrapper">
-            <img className="telde-img1" src="/img/prueba.jpg" alt="" />
+            <img className="telde-img1" src="/img/h1.jpg" alt="" />
           </div>
         </section>
 
@@ -55,7 +55,7 @@ function Telde() {
             </div>
           </div>
           <div className="telde-img2-wrapper">
-            <img className="telde-img2" src="/img/prueba2.jpg" alt="" />
+            <img className="telde-img2" src="/img/h2.jpg" alt="" />
 
           </div>
         </section>
@@ -73,7 +73,7 @@ function Telde() {
             </div>
           </div>
           <div className="telde-img3-wrapper">
-            <img className="telde-img3" src="/img/prueba3.jpg" alt="" />
+            <img className="telde-img3" src="/img/h3.jpg" alt="" />
             <img className="telde-img4" src="/img/img10.jpg" alt="" />
           </div>
         </section>

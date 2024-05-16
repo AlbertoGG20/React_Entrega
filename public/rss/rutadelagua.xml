@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+  <channel>
+    <title>Ruta del agua</title>
+    <link>https://rutadelagua.web.app/</link>
+    <description>
+      Ruta del Agua pagina principal
+    </description>
+    <language>es-ES</language>
+    <item>
+      <title>Ruta del agua</title>
+      <link>https://rutadelagua.web.app/</link>
+      <description>
+      Galería de la ruta del agua.<br />
+      <img src="https://rutadelagua.web.app/img/img0.jpg" />
+    </description>
+  </item>
+  <item>
+    <title>Galeria ruta del agua</title>
+    <link>https://rutadelagua.web.app/gallery</link>
+    <description>
+        Galería de la ruta del agua. <br />
+    <img src="https://rutadelagua.web.app/img/sec1.jpg" />
+  </description>
+</item>
+<item>
+  <title>Historia de la ruta del agua</title>
+  <link>https://rutadelagua.web.app/historia</link>
+  <description>
+        Historia de Telder y su ruta del agua. <br />
+  <img src="https://rutadelagua.web.app/img/img4.jpg" />
+</description>
+</item>
+<item>
+<title>Opiniones de la ruta</title>
+<link>https://rutadelagua.web.app/opinions</link>
+<description>
+        Opiniones de la ruta del agua. <br />
+<img src="https://rutadelagua.web.app/img/img2.jpg" />
+</description>
+</item>
+</channel>
+</rss>

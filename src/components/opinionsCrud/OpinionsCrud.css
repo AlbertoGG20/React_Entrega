@@ -234,10 +234,8 @@
 }
   .modal-star-input{
     width: 6rem;
-  
   }
-
-
+  
   .opinions-head{
     display: flex;
     justify-content: space-between;
@@ -253,7 +251,6 @@
   }
 
   .opinion-select option{
-   background-color: red;
    padding: 8px;
     color: black;
     width: 200px;

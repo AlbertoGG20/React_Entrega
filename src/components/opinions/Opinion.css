@@ -7,7 +7,7 @@
 .opinions-wrapper-cards{
     margin-top: 2rem;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     gap: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -163,8 +163,17 @@ width: 100%;
 }
 
 @media screen and (min-width: 900px) {
+
   .opinion-card-wrapper{
-      width: 24rem;
+      width: 22rem;
+  }
+  
+}
+
+@media screen and (min-width: 1475px) {
+
+  .opinion-card-wrapper{
+      width: 25rem;
   }
   
 }

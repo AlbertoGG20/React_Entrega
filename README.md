@@ -15,6 +15,19 @@ Other websites that have given me some ideas, even though I haven't specifically
 - [Awwwards](https://www.awwwards.com/websites/).
 - [ZARA](https://www.zara.com/es/)
 
+
+# Web Page Url
+
+You can view the website at the following URL  [Ruta del Agua](https://rutadelagua.web.app/)
+
+## Rss
+-  [Rss link](https://rutadelagua.web.app/rss/rutadelagua.xml)
+- feedly
+
+![Guide_Image](/React_Entrega/public/img/rss2.png)
+
+![Guide_Image](/React_Entrega/public/img/rss1.png)
+
 ## Getting Started
 
 Read the following instructions to download and view the documents.
@@ -22,6 +35,8 @@ Read the following instructions to download and view the documents.
 ### Prerequisites
 
 Ensure you have a computer that can download [Visual Studio Code](https://code.visualstudio.com/), [Node JS](https://nodejs.org/en/), [Git](https://git-scm.com/) and a web browser to view the document.
+
+
 
 ### Installing
 
@@ -68,5 +83,9 @@ In the development of this website, the following has been used:
   - [Twitter](https://twitter.com/raunofreiberg)
   - [Portfolio](https://rauno.me/)
   
+
+- **Sebastian Persson**
+
+  - How to Create a Cookie Consent   [Youtube tutorial](https://www.youtube.com/watch?v=wBmYz-vDAAo)
 
 -  **To classmates.**

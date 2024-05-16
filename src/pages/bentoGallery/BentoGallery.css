@@ -44,11 +44,17 @@ body{
     grid-column-end:  5;
     grid-row-start: 1;
   }
+
+  .bento1{
+    object-fit: contain;
+    object-position: left center;
+  }
   
   .bento2{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
+
   }
 
   .bento3{
