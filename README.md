@@ -24,9 +24,9 @@ You can view the website at the following URL  [Ruta del Agua](https://rutadelag
 -  [Rss link](https://rutadelagua.web.app/rss/rutadelagua.xml)
 - feedly
 
-![Guide_Image](/React_Entrega/public/img/rss2.png)
+![Guide_Image](/public/img/rss2.png)
 
-![Guide_Image](/React_Entrega/public/img/rss1.png)
+![Guide_Image](/public/img/rss1.png)
 
 ## Getting Started
 
