@@ -56,7 +56,6 @@ function PruebaDef() {
       setName("");
       setText("");
       setStar("");
-      alert("cambiado");
       getOpinion();
     });
   };
